@@ -23,7 +23,7 @@
         <nav>
             <a href="dashboard.html">Dashboard</a> |
             <a href="settings.html">Settings</a> |
-            <a href="logout.html" onclick="logout()">Logout</a>
+            <a href="#" onclick="logout()">Logout</a>
         </nav>
     </header>
 
@@ -47,6 +47,7 @@
     </footer>
 
     <script>
+        // Preview the profile photo when a new file is selected
         document.getElementById('profilePhoto').addEventListener('change', function(event) {
             var file = event.target.files[0];
             if (file) {
@@ -58,8 +59,10 @@
             }
         });
 
+        // Logout functionality
         function logout() {
-            // Implement your logout functionality here
+            // Simple logout functionality to redirect to a login page
+            window.location.href = 'login.html';
         }
     </script>
 
